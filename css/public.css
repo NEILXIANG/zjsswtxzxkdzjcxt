@@ -220,7 +220,7 @@ input[ltype="text"] {
     margin: 0 6px;
 }
 
-.print_content p,.print_content div.input_left,.print_content div.input_right {
+.print_content p, .print_content div.input_left, .print_content div.input_right {
     line-height: 35px;
     margin: 0 6px;
 }
@@ -266,16 +266,10 @@ input[ltype="text"] {
     float: left;
 }
 
-.ysl_ul {
-    height: 130px;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-.ysl_ul li {
-    line-height: 28px;
-}
-
 .clear {
     clear: both;
+}
+
+.txtName0 {
+    display: none;
 }

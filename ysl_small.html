@@ -11,33 +11,28 @@
 </head>
 <body>
 <form name="form1" method="post" action="#" id="password_form1">
-    <table cellpadding="0" cellspacing="0" class="l-table-edit">
+    <table width="100%" cellpadding="0" cellspacing="0" class="l-table-edit">
         <tr>
-            <td align="right" class="l-table-edit-td"></td>
+            <td width="15%" align="right" class="l-table-edit-td"></td>
             <td align="left" class="l-table-edit-td">
-                <input class="inp_ro" id="txtName0" type="radio" name="age" /><label class="lab_tit" for="txtName0">补证材料</label><input class="inp_ro" id="txtName1" type="radio" name="age" /><label class="lab_tit" for="txtName1">不予受理</label><input class="inp_ro" id="txtName2" type="radio" name="age" /><label class="lab_tit" for="txtName2">受理</label>
+                <input class="inp_ro" id="txtName0" type="radio" name="age" /><label class="lab_tit" for="txtName0">补正材料</label>
+                <input class="inp_ro" id="txtName1" type="radio" name="age" /><label class="lab_tit" for="txtName1">不予受理</label>
+                <input class="inp_ro" id="txtName2" type="radio" name="age" /><label class="lab_tit" for="txtName2">受理</label>
             </td>
             <td align="left"></td>
         </tr>
-        <tr>
-            <td align="right" class="l-table-edit-td"><label for="zygl02">说明:</label></td>
+        <tr class="txtName0">
+            <td align="right" class="l-table-edit-td">理由:</td>
             <td align="left" class="l-table-edit-td">
-                <textarea id="zygl02" rows="6" cols="80"></textarea></td>
+                <input class="inp_ro" id="bzcl0" type="radio" name="age" /><label class="lab_tit" for="bzcl0">不齐全</label>
+                <input class="inp_ro" id="bzcl1" type="radio" name="age" /><label class="lab_tit" for="bzcl1">不符合法定形式</label>
+            </td>
             <td align="left"></td>
         </tr>
-        <tr>
+        <tr class="txtName0 txtName1">
             <td align="right" class="l-table-edit-td">选择材料:</td>
             <td align="left" class="l-table-edit-td">
-                <ul class="ysl_ul">
-                    <li><input type="checkbox" name="check1" id="check1"><label for="check1">材料一</label></li>
-                    <li><input type="checkbox" name="check2" id="check2"><label for="check2">材料二</label></li>
-                    <li><input type="checkbox" name="check3" id="check3"><label for="check3">材料三</label></li>
-                    <li><input type="checkbox" name="check4" id="check4"><label for="check4">材料四</label></li>
-                    <li><input type="checkbox" name="check5" id="check5"><label for="check5">材料五</label></li>
-                    <li><input type="checkbox" name="check6" id="check6"><label for="check6">材料六</label></li>
-                    <li><input type="checkbox" name="check7" id="check7"><label for="check7">材料七</label></li>
-                    <li><input type="checkbox" name="check8" id="check8"><label for="check8">材料八</label></li>
-                </ul>
+                <textarea id="zygl02" rows="8" cols="70"></textarea>
             </td>
             <td align="left"></td>
         </tr>
