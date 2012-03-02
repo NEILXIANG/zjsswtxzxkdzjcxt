@@ -1,6 +1,7 @@
 .hd-ba {
     height: 96px;
     position: relative;
+    background: url("../img/banner_bg.gif") repeat-x;
 }
 
 .zx {
@@ -20,7 +21,7 @@
 
 .hd-ba h1 {
     text-indent: -9999px;
-    background: #d92109 url(../img/banner.gif) center left no-repeat;
+    background: url(../img/banner.gif) center left no-repeat;
     height: 96px;
 }
 
@@ -270,6 +271,6 @@ input[ltype="text"] {
     clear: both;
 }
 
-.txtName0,.txtName1 {
+.txtName0, .txtName1 {
     display: none;
 }
