@@ -6,3 +6,13 @@ input, div.l-text, input.l-text-field, div.l-trigger, div.l-trigger-icon {
 a.l-button {
     display: none;
 }
+
+body {
+    margin: 36px;
+    font-size: 18px;
+}
+
+.print_content p {
+    line-height: 56px;
+    text-indent: 2em;
+}
