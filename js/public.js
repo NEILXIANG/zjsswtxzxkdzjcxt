@@ -40,6 +40,7 @@ $(function () {
             }
         }
     );
+    //预受理显隐
     $("#txtName0").click(function () {
         $(".txtName0").show();
         $(".txtName1").hide();
