@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="lib/ligerUI/skins/Aqua/css/ligerui-all.css" />
+    <link type="text/css" rel="stylesheet" href="css/public.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="lib/ligerUI/js/ligerui.all.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+    <style type="text/css">
+        .l-text-wrapper {
+            margin-right: 3px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<form name="form1" method="post" action="yhgl_list.html" id="password_form1">
+    <table width="100%" cellpadding="0" cellspacing="0" class="l-table-edit">
+        <tr>
+            <td width="10%" align="right" class="l-table-edit-td"><label for="txtName11">受理名:</label></td>
+            <td width="40%" align="left" class="l-table-edit-td">
+                <input name="txtName" id="txtName11" class="l-text" type="text" ltype="text" />
+            </td>
+            <td width="10%" align="right" class="l-table-edit-td"><label for="txtName0">受理单号:</label></td>
+            <td width="40%" align="left" class="l-table-edit-td">
+                <input name="txtName" class="l-text" type="text" id="txtName0" ltype="text" /></td>
+        </tr>
+        <tr>
+            <td align="right" class="l-table-edit-td"><label for="txtName5">联系人:</label></td>
+            <td align="left" class="l-table-edit-td">
+                <input name="txtName" class="l-text" type="text" id="txtName5" ltype="text" /></td>
+            <td align="right" class="l-table-edit-td"><label for="txtName4">手机:</label></td>
+            <td align="left" class="l-table-edit-td">
+                <input name="txtName" class="l-text" type="text" id="txtName4" ltype="text" /></td>
+        </tr>
+        <tr>
+            <td align="right" class="l-table-edit-td"><label for="txtPro">所属地区:</label></td>
+            <td align="left" class="l-table-edit-td">
+                <input type="text" id="txtPro" />
+                <input type="text" id="txtCity" />
+            </td>
+            <td align="right" class="l-table-edit-td"><label for="txtCity"></label></td>
+            <td align="left" class="l-table-edit-td"></td>
+        </tr>
+        <tr>
+            <td align="right" class="l-table-edit-td"><label for="txtName1">单位简码:</label></td>
+            <td align="left" class="l-table-edit-td">
+                <input name="txtName" class="l-text" type="text" id="txtName1" ltype="text" /></td>
+            <td align="right" class="l-table-edit-td"><label for="txtName2">机构代码:</label></td>
+            <td align="left" class="l-table-edit-td">
+                <input name="txtName" class="l-text" type="text" id="txtName2" ltype="text" /></td>
+        </tr>
+        <tr>
+            <td align="right" class="l-table-edit-td"><label for="txtName3">申请单位:</label></td>
+            <td align="left" class="l-table-edit-td">
+                <input name="txtName" class="l-text" type="text" id="txtName3" ltype="text" /><a href="javascript:void(0)" class="l-button">添加单位</a>
+            </td>
+            <td align="right" class="l-table-edit-td"><label for="txtName6">申报材料:</label></td>
+            <td align="left" class="l-table-edit-td">
+                <input name="txtName" class="l-text" type="text" id="txtName6" ltype="text" /><a onclick="c_open1()" href="javascript:void(0)" class="l-button">选择材料</a>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" class="l-table-edit-td"><label for="txtName8">受理日期:</label></td>
+            <td align="left" class="l-table-edit-td">
+                <input name="txtDate" type="text" id="txtName8" ltype="date" />
+            <td align="right" class="l-table-edit-td"><label for="txtName9">审批环节:</label></td>
+            <td align="left" class="l-table-edit-td">
+                <select name="txtName8" id="txtName9" ltype="select">
+                    <option value="0">受理</option>
+                    <option value="2">承办</option>
+                    <option value="5">审核</option>
+                    <option value="6">批准</option>
+                    <option value="7">办结</option>
+                    <option value="8">退回</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td align="right" class="l-table-edit-td"><label for="txtName12">事由说明:</label></td>
+            <td colspan="3" align="left" class="l-table-edit-td">
+                <textarea id="txtName12" cols="110" rows="6" class="l-textarea"></textarea>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="提交" id="Button1" class="l-button l-button-submit" />
+    <input type="reset" value="重置" id="Button2" class="l-button l-button-reset" />
+</form>
+<script type="text/javascript" src="js/city.js"></script>
+</body>
+</html>

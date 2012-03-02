@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="lib/ligerUI/skins/Aqua/css/ligerui-all.css" />
+    <link type="text/css" rel="stylesheet" href="css/public.css" />
+    <link type="text/css" rel="stylesheet" href="css/print.css" media="print" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="lib/ligerUI/js/ligerui.all.js"></script>
+    <script type="text/javascript" src="js/jquery.printPage.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript">
+        //打印程序调用
+        $(".btnPrint").printPage();
+    </script>
+</head>
+<body>
+<h2 class="text_ceter">浙江省商务厅行政许可申请材料接收凭证</h2>
+
+<div class="print_content">
+    <div class="input_right"><label>编号:</label><input type="text" class="print_name input_right" value="" /></div>
+    <p><input type="text" class="print_name" value="" />:</p>
+
+    <p>
+        <span>本厅已收到你（单位）提交的申请</span>
+        <input type="text" class="print_name" value="" />行政许可下列材料。
+    </p>
+
+    <p>
+        <span>如下:</span><textarea class="print_input"></textarea>
+    </p>
+
+    <p>以上申请材料如不齐全或者不符合法定形式，本厅将在5个工作日内告知。</p>
+
+    <p class="text_right">浙江省商务厅业务审批章</p>
+
+    <p><span>送达人（签字）</span><input type="text" class="print_name input_right" value="" /></p>
+    <br class="clear" />
+
+    <div class="input_left">申请人通信地址：</div>
+    <div class="input_right">联系电话：<input type="text" class="print_name input_right" value="" /></div>
+</div>
+<a href="print_b.html" class="l-button btnPrint">打印</a>
+</body>
+</html>

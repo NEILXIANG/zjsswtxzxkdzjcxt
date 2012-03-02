@@ -1,0 +1,281 @@
+.hd-ba {
+    height: 96px;
+    position: relative;
+}
+
+.zx {
+    position: absolute;
+    bottom: 6px;
+    right: 12px;
+}
+
+.zx span {
+    margin-right: 24px;
+}
+
+.zx span, .zx a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.hd-ba h1 {
+    text-indent: -9999px;
+    background: #d92109 url(../img/banner.gif) center left no-repeat;
+    height: 96px;
+}
+
+#layout1 {
+    width: 100%;
+    *width: 99.8% !important;
+    *width: 99.8%;
+    overflow: hidden;
+}
+
+#accordion1 {
+    overflow-y: auto;
+}
+
+.welcome {
+    margin: 6px;
+
+}
+
+.welcome ul li {
+    margin-bottom: 12px;
+}
+
+.welcome p {
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    padding-left: 12px;
+}
+
+.welcome p.title {
+    background: #fcf5f5;
+    border-bottom: 0 none;
+    position: relative;
+    padding-left: 26px;
+}
+
+.welcome p.title b {
+    -moz-transition: -moz -transform .2s ease -in 0s;
+    border: 4px solid #FCF5F5;
+    border-left-color: #ff6600;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    width: 0
+}
+
+.welcome p a {
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 0 38px 0 18px;
+}
+
+.welcome p a span {
+    font-weight: bold;
+    margin: 0 6px;
+}
+
+.welcome p a span.red {
+    color: #ff0000;
+}
+
+.welcome p a span.blue {
+    color: #0000ff;
+}
+
+#password_form1 {
+    margin: 6px;
+}
+
+#password_form1 table td {
+    border-right: 0 none;
+    border-bottom: 0 none;
+}
+
+.l-table-edit-td {
+    padding: 4px;
+}
+
+.l-textarea {
+    overflow: auto;
+}
+
+.l-button-submit, .l-button-reset {
+    width: 60px;
+    float: left;
+    margin-left: 10px;
+    padding-bottom: 2px;
+}
+
+.time {
+    width: 80px;
+    float: left;
+}
+
+.l-grid-header {
+    border-top: 1px solid #DDDDDD;
+}
+
+.l-grid-header table td, table.table-even td {
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    height: 22px;
+    padding: 3px;
+    text-align: center;
+}
+
+.bgd {
+    background: #F5F5F5;
+}
+
+.fengye {
+    text-align: right;
+    font-size: 12px;
+    background: #fcf5f5;
+    height: 28px;
+    line-height: 28px;
+    border-bottom: 1px solid #DDDDDD;
+    padding-right: 12px;
+}
+
+.fengye a {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.l-button {
+    width: 60px;
+    float: left;
+    margin-left: 3px;
+}
+
+.td_center {
+    text-align: center;
+}
+
+.td_center a {
+    margin: 0 6px;
+}
+
+table.table-even span {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+table.table-even span.red {
+    color: #ff0000;
+}
+
+#gh {
+    height: 272px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#Button1, #Button2, #Button3 {
+    margin: 6px;
+}
+
+.lab_tit {
+    margin: 0 18px 0 3px;
+}
+
+table.table-even span.text_none {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+input[ltype="text"] {
+    width: 240px;
+}
+
+.pslog {
+    color: #ff0000;
+    width: 380px;
+}
+
+.text_ceter {
+    text-align: center;
+}
+
+.print_content {
+    width: 100%;
+    margin-bottom: 12px;
+    float: left;
+}
+
+.print_content .l-text-wrapper {
+    float: left;
+    position: relative;
+    top: 6px;
+    margin: 0 6px;
+}
+
+.print_content p,.print_content div.input_left,.print_content div.input_right {
+    line-height: 35px;
+    margin: 0 6px;
+}
+
+.print_content p span {
+    float: left;
+}
+
+.print_name {
+    width: 200px;
+    border-top: 0 none;
+    border-right: 0 none;
+    border-left: 0 none;
+
+}
+
+.print_input {
+    position: relative;
+    top: 6px;
+    margin: 0 6px;
+    width: 600px;
+    height: 100px;
+}
+
+.text_right {
+    text-align: right;
+
+}
+
+.input_right {
+    float: right;
+}
+
+.input_left {
+    float: left;
+}
+
+#framecenter {
+    height: 200px;
+}
+
+.l-text {
+    float: left;
+}
+
+.ysl_ul {
+    height: 130px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.ysl_ul li {
+    line-height: 28px;
+}
+
+.clear {
+    clear: both;
+}

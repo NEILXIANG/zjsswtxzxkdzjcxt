@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="lib/ligerUI/skins/Aqua/css/ligerui-all.css" />
+    <link type="text/css" rel="stylesheet" href="css/public.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="lib/ligerUI/js/ligerui.all.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+</head>
+<body>
+<form action="bbgl_list.html" method="post">
+    <div class="l-panel-search">
+        <div class="l-panel-search-item">处室：</div>
+        <div class="l-panel-search-item">
+            <select name="ddlDepart" id="ddlDepart" ltype="select">
+                <option value="0">全部</option>
+                <option value="2">机电处</option>
+                <option value="5">外贸处</option>
+                <option value="6">外资处</option>
+                <option value="7">秩序处</option>
+                <option value="8">市场处</option>
+                <option value="22">外经处</option>
+                <option value="23">商发处</option>
+            </select>
+        </div>
+        <div class="l-panel-search-item">受理时间：</div>
+        <div class="l-panel-search-item">
+            <input name="txtDate" type="text" id="txtDate0" ltype="date" />
+        </div>
+        <div class="l-panel-search-item">-</div>
+        <div class="l-panel-search-item">
+            <input name="txtDate" type="text" id="txtDate1" ltype="date" />
+        </div>
+        <div style="width:60px;" class="l-panel-search-item">
+            <input class="l-button" type="submit" value="搜索" />
+        </div>
+    </div>
+</form>
+<div class="l-grid-header">
+    <table width="100%">
+        <tr>
+            <td width="4%">编号</td>
+            <td width="20%">事项名称</td>
+            <td width="10%">承诺期(工作日)</td>
+            <td width="10%">受理总数</td>
+            <td width="8%">按时办结数</td>
+            <td width="8%">正在办理数</td>
+            <td width="8%">超期件</td>
+            <td width="8%">按时办结率</td>
+            <td width="8%">总提前工作日</td>
+            <td width="8%">平均提前工作日</td>
+            <td width="8%">平均提前率</td>
+        </tr>
+    </table>
+</div>
+<div class="l-grid-body l-scroll">
+    <table class="table-even" width="100%">
+        <tr>
+            <td width="4%">1</td>
+            <td width="20%">本省企业(含外商投资企业)在境外开办企业和机构(金融类除外)审查</td>
+            <td width="10%">3</td>
+            <td width="10%">30</td>
+            <td width="8%">30</td>
+            <td width="8%"><span onclick="f_open1()" class="red">1</span></td>
+            <td width="8%">0</td>
+            <td width="8%">100.0%</td>
+            <td width="8%">87</td>
+            <td width="8%">2.9</td>
+            <td width="8%">96.67%</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>本省企业(含外商投资企业)在境外开办企业和机构(金融类除外)审查</td>
+            <td>3</td>
+            <td>30</td>
+            <td>30</td>
+            <td><span>1</span></td>
+            <td>0</td>
+            <td>100.0%</td>
+            <td>87</td>
+            <td>2.9</td>
+            <td>96.67%</td>
+        </tr>
+    </table>
+</div>
+<div class="fengye">每页10条，共 2 页， 14 条，当前第
+    <input type="text" id="ToPageInput" onKeyDown="submitToPage()" style="width:40px; font-size:12px; height:15px;" value="1" />
+    页 &nbsp; <a href="#" onclick="toPage(1)">&nbsp;首 页</a> |
+    上一页
+    | <a href="#" onclick="toPage(2)">下一页</a> | <a href="#" onclick="toPage(2)">尾页</a></div>
+</div>
+</body>
+</html>

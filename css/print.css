@@ -1,0 +1,8 @@
+input, div.l-text, input.l-text-field, div.l-trigger, div.l-trigger-icon {
+    border: 0 none;
+    background: none;
+}
+
+a.l-button {
+    display: none;
+}

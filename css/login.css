@@ -1,0 +1,151 @@
+.wrapper {
+    width: 100%;
+    min-width: 960px;
+    background: #d91d00 url("../img/login_bg.gif") repeat-x;
+}
+
+.login_top {
+    width: 1004px;
+    height: 170px;
+    background: url("../img/login_01.gif") no-repeat;
+}
+
+.login_top h1 {
+    text-indent: -9999px;
+}
+
+.login_content {
+    width: 1004px;
+    height: 311px;
+    background: url("../img/login_02.jpg") no-repeat;
+    position: relative;
+}
+
+.form_bg {
+    width: 537px;
+    height: 222px;
+    position: absolute;
+    top: 40px;
+    left: 253px;
+}
+
+.form_bg .ban {
+    width: 537px;
+    height: 28px;
+    background: url("../img/login_05.png") no-repeat 0 -60px;
+    overflow: hidden;
+}
+
+.form_bg .ban h2 {
+    text-indent: 43px;
+    line-height: 28px;
+    line-height: 32px \9; /*解决IE7.8下行高的bug*/
+    _line-height: 28px; /*解决IE6下行高bug*/
+}
+
+.form_bg .content {
+    width: 537px;
+    height: 194px;
+    background: url("../img/login_05.png") no-repeat 0 -88px;
+}
+
+.form_top {
+    border-bottom: 1px dashed #c0b78f;
+    height: 123px;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.form_top li {
+    height: 50px;
+    line-height: 28px;
+    padding-top: 10px;
+}
+
+.form_top li label, .form_top li input.span3, .form_top li span {
+    float: left;
+}
+
+.form_top li span {
+    width: 166px;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 12px;
+    color: #b94a48;
+    background: url("../img/login_05.png") no-repeat 0 -32px;
+    display: inline-block;
+    text-indent: 12px;
+}
+
+.form_bottom {
+    height: 60px;
+}
+
+.form_bottom input {
+    float: right;
+    width: 108px;
+    height: 32px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background: url("../img/login_05.png") no-repeat 0 0;
+    border: 0 none;
+    cursor: pointer;
+    margin-right: 34px;
+    margin-top: 15px;
+}
+
+.footer {
+    margin-top: 22px;
+    text-align: center;
+}
+
+.footer h3 {
+    color: #ffffff;
+}
+
+.form_top li input.span3, .form_top li textarea.span3, .form_top li .uneditable-input.span3 {
+    width: 205px;
+}
+
+.form_top li input, .form_top li textarea {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+.form_top li input,
+.form_top li textarea,
+.form_top li select,
+.form_top li .uneditable-input {
+    display: inline-block;
+    width: 205px;
+    height: 18px;
+    padding: 4px;
+    margin-bottom: 9px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #555555;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.form_top li input:focus, .form_top li textarea:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    outline: 0;
+    outline: thin dotted \9; /* IE6-9 */
+}
+
+#un_msg, #pw_msg {
+    display: none;
+}

@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="lib/ligerUI/skins/Aqua/css/ligerui-all.css" />
+    <link type="text/css" rel="stylesheet" href="css/public.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="lib/ligerUI/js/ligerui.all.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+</head>
+<body>
+<div id="toptoolbar" class="l-toolbar">
+    <a href="yhgl_detail.html" class="l-button">添加</a><a class="l-button">删除</a>
+
+    <div class="l-clear"></div>
+</div>
+<div class="l-grid-header">
+    <table width="100%">
+        <tr>
+            <td width="5%"><input type="checkbox" id="checkall" /></td>
+            <td width="15%">账号</td>
+            <td width="15%">用户姓名</td>
+            <td width="15%">办事窗口</td>
+            <td width="25%">创建时间</td>
+            <td width="10%">是否开启</td>
+            <td width="15%">操作</td>
+        </tr>
+    </table>
+</div>
+<div class="l-grid-body l-scroll">
+    <table class="table-even" width="100%">
+        <tr>
+            <td width="5%"><input type="checkbox" name="checkname" /></td>
+            <td width="15%">zxc</td>
+            <td width="15%">秩序处</td>
+            <td width="15%">秩序处</td>
+            <td width="25%">2010-05-26 02:43:12</td>
+            <td width="10%">开启</td>
+            <td class="td_center" width="15%">
+                <a title="角色管理" onclick="j_open1()"><img src="img/icon_edit.png" alt="角色管理" /></a><a title="删除" href="#"><img src="img/icon_del.png" alt="删除" /></a>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="checkname" /></td>
+            <td>zxc</td>
+            <td>秩序处</td>
+            <td>秩序处</td>
+            <td>2010-05-26 02:43:12</td>
+            <td>开启</td>
+            <td class="td_center">
+                <a title="角色管理" onclick="j_open1()"><img src="img/icon_edit.png" alt="角色管理" /></a><a title="删除" href="#"><img src="img/icon_del.png" alt="删除" /></a>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="checkname" /></td>
+            <td>zxc</td>
+            <td>秩序处</td>
+            <td>秩序处</td>
+            <td>2010-05-26 02:43:12</td>
+            <td>开启</td>
+            <td class="td_center">
+                <a title="角色管理" onclick="j_open1()"><img src="img/icon_edit.png" alt="角色管理" /></a><a title="删除" href="#"><img src="img/icon_del.png" alt="删除" /></a>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="fengye">
+    每页10条，共 2 页， 14 条，当前第
+    <input type="text" id="ToPageInput" onKeyDown="submitToPage()" style="width:40px; font-size:12px; height:15px;" value="1" />
+    页 &nbsp; <a href="#" onclick="toPage(1)">&nbsp;首 页</a> |
+    上一页
+    | <a href="#" onclick="toPage(2)">下一页</a> | <a href="#" onclick="toPage(2)">尾页</a>
+</div>
+</div>
+</body>
+</html>
