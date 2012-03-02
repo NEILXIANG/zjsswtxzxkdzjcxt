@@ -42,13 +42,14 @@ $(function () {
     );
     $("#txtName0").click(function () {
         $(".txtName0").show();
+        $(".txtName1").hide();
     });
     $("#txtName1").click(function () {
         $(".txtName0").hide();
         $(".txtName1").show();
     });
     $("#txtName2").click(function () {
-        $(".txtName0").hide();
+        $(".txtName0,.txtName1").hide();
     });
 });
 //预受理

@@ -270,6 +270,6 @@ input[ltype="text"] {
     clear: both;
 }
 
-.txtName0 {
+.txtName0,.txtName1 {
     display: none;
 }
