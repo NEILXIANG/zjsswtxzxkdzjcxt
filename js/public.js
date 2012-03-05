@@ -47,9 +47,12 @@ $(function () {
 });
 //预受理
 function a_open1() {
-    $.ligerDialog.open({ target:$("#target1"), width:600, height:410, buttons:[
+    $.ligerDialog.open({ url:'ysl_small.html',name:'ysl', width:600, height:410, buttons:[
         { text:'确定', onclick:function (item, dialog) {
-            alert(item.text);
+            //提交连接
+            //dialog.setUrl("http://www.baidu.com/");
+            //提交 iframe 里的 form
+            frames['ysl'].document.forms['form1'].submit();
         } },
         { text:'取消', onclick:function (item, dialog) {
             dialog.hidden();
