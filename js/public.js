@@ -6,23 +6,15 @@
  * To change this template use File | Settings | File Templates.
  */
 $(function () {
-    //所有 form 使用 UI
-    $("form").ligerForm();
     $(".table-even tr").hover(function () {
             $(this).addClass("bgd");
         },
         function () {
             $(this).removeClass("bgd");
         });
-    //先去的 name="sel" 的checkbox
-    var $checkbox = $(":checkbox[name=sel]");
-    //注册页面
-    $("#Button2").click(function () {
-        $("input[name='txtName']").ligerTip({ content:"请填写" });
-    });
     $("#Button3").click(function () {
         var count = $("input[name='busid']:checked").length;
-        alert(count);
+        console.log(count);
     });
     //打印时间
     $("#txt1,#txt2").ligerDateEditor({ format:"yyyy年MM月dd日", labelWidth:100, labelAlign:'center' });
@@ -55,7 +47,16 @@ $(function () {
 });
 //预受理
 function a_open1() {
-    $.ligerDialog.open({ url:'ysl_small.html', width:600, height:410, title:"预受理" });
+    $.ligerDialog.open({ target:$("#target1"), width:600, height:410, buttons:[
+        { text:'确定', onclick:function (item, dialog) {
+            alert(item.text);
+        } },
+        { text:'取消', onclick:function (item, dialog) {
+            dialog.hidden();
+        } }
+    ], isResize:true
+    });
+
 }
 //承办、审核、批准
 function b_open1() {

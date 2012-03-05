@@ -8,12 +8,44 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="lib/ligerUI/js/ligerui.all.js"></script>
     <script type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript" src="lib/jquery-validation/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="lib/jquery-validation/jquery.metadata.js"></script>
+    <script type="text/javascript" src="lib/jquery-validation/messages_cn.js"></script>
     <style type="text/css">
         .l-text-wrapper {
             margin-right: 3px;
             float: left;
         }
     </style>
+    <script type="text/javascript">
+        $(function () {
+            //form提交未填写提示
+            $.metadata.setType("attr", "validate");
+            var v = $("form").validate({
+                debug:true,
+                errorPlacement:function (lable, element) {
+                    if (element.hasClass("l-textarea")) {
+                        element.ligerTip({ content:lable.html(), target:element[0] });
+                    }
+                    else if (element.hasClass("l-text-field")) {
+                        element.parent().ligerTip({ content:lable.html(), target:element[0] });
+                    }
+                    else {
+                        lable.appendTo(element.parents("td:first").next("td"));
+                    }
+                },
+                success:function (lable) {
+                    lable.ligerHideTip();
+                    lable.remove();
+                },
+                submitHandler:function () {
+                    $("form .l-text,.l-textarea").ligerHideTip();
+                    console.log("Submitted!")
+                }
+            });
+            $("form").ligerForm();
+        });
+    </script>
 </head>
 <body>
 <form name="form1" method="post" action="yhgl_list.html" id="password_form1">
@@ -21,19 +53,22 @@
         <tr>
             <td width="10%" align="right" class="l-table-edit-td"><label for="txtName11">受理名:</label></td>
             <td width="40%" align="left" class="l-table-edit-td">
-                <input name="txtName" id="txtName11" class="l-text" type="text" ltype="text" />
+                <input name="txtName0" id="txtName11" class="l-text" type="text" ltype="text" validate="{required:true}" />
             </td>
             <td width="10%" align="right" class="l-table-edit-td"><label for="txtName0">受理单号:</label></td>
             <td width="40%" align="left" class="l-table-edit-td">
-                <input name="txtName" class="l-text" type="text" id="txtName0" ltype="text" /></td>
+                <input name="txtName1" class="l-text" type="text" id="txtName0" ltype="text" validate="{required:true}" />
+            </td>
         </tr>
         <tr>
             <td align="right" class="l-table-edit-td"><label for="txtName5">联系人:</label></td>
             <td align="left" class="l-table-edit-td">
-                <input name="txtName" class="l-text" type="text" id="txtName5" ltype="text" /></td>
+                <input name="txtName2" class="l-text" type="text" id="txtName5" ltype="text" validate="{required:true}" />
+            </td>
             <td align="right" class="l-table-edit-td"><label for="txtName4">手机:</label></td>
             <td align="left" class="l-table-edit-td">
-                <input name="txtName" class="l-text" type="text" id="txtName4" ltype="text" /></td>
+                <input name="txtName3" class="l-text" type="text" id="txtName4" ltype="text" validate="{required:true}" />
+            </td>
         </tr>
         <tr>
             <td align="right" class="l-table-edit-td"><label for="txtPro">所属地区:</label></td>

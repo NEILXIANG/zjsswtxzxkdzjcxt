@@ -17,45 +17,44 @@
     <a href="javascript:void(0)" onclick="b_open1()" class="l-button">审核</a>
     <a href="javascript:void(0)" onclick="b_open1()" class="l-button">批准</a>
     <a href="javascript:void(0)" onclick="d_open1()" class="l-button">办结</a>
+
     <div class="l-clear"></div>
 </div>
-<form action="#" method="post">
-    <div class="l-panel-search" style="padding-left: 130px;">
-        <div class="l-panel-search-item">状态：</div>
-        <div class="l-panel-search-item">
-            <select name="ddlDepart" id="ddlDepart" ltype="select">
-                <option value="0">选择</option>
-                <option value="1">受理</option>
-                <option value="2">承办</option>
-                <option value="3">审核</option>
-                <option value="4">批准</option>
-                <option value="5">办结</option>
-                <option value="6">退回</option>
-            </select>
-        </div>
-        <div class="l-panel-search-item">受理时间：</div>
-        <div class="l-panel-search-item">
-            <input name="txtDate" type="text" id="txtDate0" ltype="date" />
-        </div>
-        <div class="l-panel-search-item">-</div>
-        <div class="l-panel-search-item">
-            <input name="txtDate" type="text" id="txtDate1" ltype="date" />
-        </div>
+<div class="l-panel-search" style="padding-left: 130px;">
+    <div class="l-panel-search-item">状态：</div>
+    <div class="l-panel-search-item">
+        <select name="ddlDepart" id="ddlDepart" ltype="select">
+            <option value="0">选择</option>
+            <option value="1">受理</option>
+            <option value="2">承办</option>
+            <option value="3">审核</option>
+            <option value="4">批准</option>
+            <option value="5">办结</option>
+            <option value="6">退回</option>
+        </select>
     </div>
-    <div class="l-panel-search" style="padding-left: 130px;">
-        <div class="l-panel-search-item">受理单号：</div>
-        <div class="l-panel-search-item">
-            <input type="text" style="width: 110px;" />
-        </div>
-        <div class="l-panel-search-item">单位名称：</div>
-        <div class="l-panel-search-item">
-            <input type="text" style="width: 110px;" />
-        </div>
-        <div style="width:60px;" class="l-panel-search-item">
-            <input class="l-button" type="submit" value="搜索" />
-        </div>
+    <div class="l-panel-search-item">受理时间：</div>
+    <div class="l-panel-search-item">
+        <input name="txtDate" type="text" id="txtDate0" ltype="date" />
     </div>
-</form>
+    <div class="l-panel-search-item">-</div>
+    <div class="l-panel-search-item">
+        <input name="txtDate" type="text" id="txtDate1" ltype="date" />
+    </div>
+</div>
+<div class="l-panel-search" style="padding-left: 130px;">
+    <div class="l-panel-search-item">受理单号：</div>
+    <div class="l-panel-search-item">
+        <input type="text" style="width: 110px;" />
+    </div>
+    <div class="l-panel-search-item">单位名称：</div>
+    <div class="l-panel-search-item">
+        <input type="text" style="width: 110px;" />
+    </div>
+    <div style="width:60px;" class="l-panel-search-item">
+        <input class="l-button" type="submit" value="搜索" />
+    </div>
+</div>
 <div class="l-grid-header">
     <table width="100%">
         <tr>
@@ -180,5 +179,43 @@
     上一页
     | <a href="#" onclick="toPage(2)">下一页</a> | <a href="#" onclick="toPage(2)">尾页</a></div>
 </div>
+
+<form method="post" action="#">
+    <div id="target1" style="display: none;">
+        <table width="100%" cellpadding="0" cellspacing="0" class="l-table-edit">
+            <tr>
+                <td width="15%" align="right" class="l-table-edit-td"></td>
+                <td align="left" class="l-table-edit-td">
+                    <input class="inp_ro" id="txtName0" type="radio" name="age" /><label class="lab_tit" for="txtName0">补正材料</label>
+                    <input class="inp_ro" id="txtName1" type="radio" name="age" /><label class="lab_tit" for="txtName1">不予受理</label>
+                    <input class="inp_ro" id="txtName2" type="radio" name="age" /><label class="lab_tit" for="txtName2">受理</label>
+                </td>
+                <td align="left"></td>
+            </tr>
+            <tr class="txtName0">
+                <td align="right" class="l-table-edit-td">理由:</td>
+                <td align="left" class="l-table-edit-td">
+                    <input class="inp_ro" id="bzcl0" type="radio" name="age" /><label class="lab_tit" for="bzcl0">不齐全</label>
+                    <input class="inp_ro" id="bzcl1" type="radio" name="age" /><label class="lab_tit" for="bzcl1">不符合法定形式</label>
+                </td>
+                <td align="left"></td>
+            </tr>
+            <tr class="txtName1">
+                <td align="right" class="l-table-edit-td">理由说明:</td>
+                <td align="left" class="l-table-edit-td">
+                    <textarea id="zygl02" rows="8" cols="70"></textarea>
+                </td>
+                <td align="left"></td>
+            </tr>
+            <tr class="txtName0">
+                <td align="right" class="l-table-edit-td">补正材料:</td>
+                <td align="left" class="l-table-edit-td">
+                    <textarea id="zygl03" rows="8" cols="70"></textarea>
+                </td>
+                <td align="left"></td>
+            </tr>
+        </table>
+    </div>
+</form>
 </body>
 </html>
