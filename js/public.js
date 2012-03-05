@@ -47,7 +47,7 @@ $(function () {
 });
 //预受理
 function a_open1() {
-    $.ligerDialog.open({ url:'ysl_small.html',name:'ysl', width:600, height:410, buttons:[
+    $.ligerDialog.open({ url:'ysl_small.html', name:'ysl', width:600, height:410, buttons:[
         { text:'确定', onclick:function (item, dialog) {
             //提交连接
             //dialog.setUrl("http://www.baidu.com/");
@@ -59,7 +59,6 @@ function a_open1() {
         } }
     ], isResize:true
     });
-
 }
 //承办、审核、批准
 function b_open1() {
