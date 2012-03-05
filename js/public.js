@@ -104,3 +104,11 @@ function title_100() {
 function window_open100() {
     $.ligerDialog.open({ url:'lcpz_detail.html', width:500, height:350, showMax:true, showToggle:true, showMin:true, isResize:true, modal:false, title:title_100() });
 }
+//模仿 window 内层窗口
+var wincount_tjcl = 0;
+function title_200() {
+    return '添加材料 ' + ++wincount_tjcl;
+}
+function window_open200() {
+    $.ligerDialog.open({ url:'lcpz_list.html', width:600, height:410, showMax:true, showToggle:true, showMin:true, isResize:true, modal:false, title:title_200() });
+}
