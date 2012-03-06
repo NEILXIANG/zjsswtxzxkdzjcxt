@@ -50,9 +50,9 @@ function a_open1() {
     $.ligerDialog.open({ url:'ysl_small.html', name:'ysl', width:600, height:410, buttons:[
         { text:'确定', onclick:function (item, dialog) {
             //提交连接
-            //dialog.setUrl("http://www.baidu.com/");
+            dialog.setUrl("http://127.0.0.1/zjsswtxzxkdzjcxt/");
             //提交 iframe 里的 form
-            frames['ysl'].document.forms['form1'].submit();
+            //window.frames['ysl'].document.forms['form1'].submit();
         } },
         { text:'取消', onclick:function (item, dialog) {
             dialog.hidden();
