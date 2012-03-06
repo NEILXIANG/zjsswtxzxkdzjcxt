@@ -6,6 +6,9 @@
  * To change this template use File | Settings | File Templates.
  */
 $(function () {
+    //调用 form样式
+    $("form").ligerForm();
+    //table 焦点色
     $(".table-even tr").hover(function () {
             $(this).addClass("bgd");
         },

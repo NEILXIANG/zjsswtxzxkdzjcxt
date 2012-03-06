@@ -59,6 +59,6 @@ $("#txtPro").ligerComboBox({ data:proData, isMultiSelect:false,
 $("#txtCity").ligerComboBox({ data:null, isMultiSelect:false, isShowCheckBox:false,
     onSelected:function (cityvalue, citytext) {
         //取地市
-        console.log('id:' + cityvalue + ' name:' + citytext);
+        //console.log('id:' + cityvalue + ' name:' + citytext);
     }
 });
