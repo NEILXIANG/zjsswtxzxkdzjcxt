@@ -88,8 +88,21 @@ function p_open1() {
 function x_open1() {
     $.ligerDialog.open({ url:'zygl_small.html', width:700, height:440 });
 }
+//用户管理
 function y_open1() {
-    $.ligerDialog.open({ url:'xzck_small.html', width:300, height:410 });
+    $.ligerDialog.open({ url:'xzck_small.html', name:'myFrame', width:300, height:410, buttons:[
+        { text:'确定', onclick:function (item, dialog) {
+            //提交连接
+            //dialog.setUrl("http://127.0.0.1/zjsswtxzxkdzjcxt/");
+            window.frames['myFrame'].say();
+            dialog.hidden();
+            //提交 iframe 里的 form
+            //window.frames['ysl'].document.forms['form1'].submit();
+        } },
+        { text:'取消', onclick:function (item, dialog) {
+            dialog.hidden();
+        } }
+    ]});
 }
 function z_open1() {
     $.ligerDialog.open({ url:'yjzt_small.html', width:300, height:410 });
