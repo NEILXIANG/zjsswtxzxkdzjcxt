@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="lib/ligerUI/skins/Aqua/css/ligerui-all.css" />
+    <link type="text/css" rel="stylesheet" href="css/public.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="lib/ligerUI/js/ligerui.all.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript" src="lib/jquery-validation/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="lib/jquery-validation/jquery.metadata.js"></script>
+    <script type="text/javascript" src="lib/jquery-validation/messages_cn.js"></script>
+    <style type="text/css">
+        .l-text-wrapper {
+            margin-right: 3px;
+            float: left;
+        }
+
+        #password_form1 table.l-table-edit {
+            border: 1px solid #AECAF0;
+        }
+
+        #password_form1 table.l-table-edit td {
+            border-bottom: 1px solid #AECAF0;
+            border-right: 1px solid #AECAF0;
+        }
+
+        #password_form1 table.xxt {
+            border: 1px solid #CD0A0A
+        }
+
+        .hd_tb td {
+            background: #FEF1EC;
+            color: #CD0A0A;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            //form提交未填写提示
+            $.metadata.setType("attr", "validate");
+            var v = $("form").validate({
+                debug:true,
+                errorPlacement:function (lable, element) {
+                    if (element.hasClass("l-textarea")) {
+                        element.ligerTip({ content:lable.html(), target:element[0] });
+                    }
+                    else if (element.hasClass("l-text-field")) {
+                        element.parent().ligerTip({ content:lable.html(), target:element[0] });
+                    }
+                    else {
+                        lable.appendTo(element.parents("td:first").next("td"));
+                    }
+                },
+                success:function (lable) {
+                    lable.ligerHideTip();
+                    lable.remove();
+                },
+                submitHandler:function () {
+                    $("form .l-text,.l-textarea").ligerHideTip();
+                    console.log("Submitted!")
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<form name="form1" method="post" action="yhgl_list.html" id="password_form1">
+    <table width="100%" cellpadding="0" cellspacing="0" class="l-table-edit">
+        <tr>
+            <td width="10%" align="right" class="l-table-edit-td"><label>受理名:</label></td>
+            <td width="40%" align="left" class="l-table-edit-td">
+                受理名
+            </td>
+            <td width="10%" align="right" class="l-table-edit-td"><label>受理单号:</label></td>
+            <td width="40%" align="left" class="l-table-edit-td">
+                受理单号
+            </td>
+        </tr>
+        <tr>
+            <td align="right" class="l-table-edit-td"><label>联系人:</label></td>
+            <td align="left" class="l-table-edit-td">
+                联系人
+            </td>
+            <td align="right" class="l-table-edit-td"><label>手机:</label></td>
+            <td align="left" class="l-table-edit-td">
+                手机
+            </td>
+        </tr>
+        <tr>
+            <td align="right" class="l-table-edit-td"><label>所属地区:</label></td>
+            <td colspan="3" align="left" class="l-table-edit-td">
+                所属地区
+            </td>
+        </tr>
+        <tr>
+            <td align="right" class="l-table-edit-td"><label>单位简码:</label></td>
+            <td align="left" class="l-table-edit-td">
+                单位简码
+            </td>
+            <td align="right" class="l-table-edit-td"><label>机构代码:</label></td>
+            <td align="left" class="l-table-edit-td">
+                机构代码
+            </td>
+        </tr>
+        <tr>
+            <td align="right" class="l-table-edit-td"><label>申请单位:</label></td>
+            <td align="left" class="l-table-edit-td">
+                申请单位
+            </td>
+            <td align="right" class="l-table-edit-td"><label>申报材料:</label></td>
+            <td align="left" class="l-table-edit-td">
+                申报材料
+            </td>
+        </tr>
+        <tr>
+            <td align="right" class="l-table-edit-td"><label>受理日期:</label></td>
+            <td align="left" class="l-table-edit-td">
+                受理日期
+            </td>
+            <td align="right" class="l-table-edit-td"><label>审批环节:</label></td>
+            <td align="left" class="l-table-edit-td">
+                审批环节
+            </td>
+        </tr>
+        <tr>
+            <td align="right" class="l-table-edit-td"><label>事由说明:</label></td>
+            <td colspan="3" align="left" class="l-table-edit-td">
+                审批环节审批环节审批环节审批环节审批环节审批环节审批环节审批环节审批环节审批环节审批环节
+            </td>
+        </tr>
+        <tr class="hd_tb">
+            <td class="l-table-edit-td" colspan="4">申请材料</td>
+        </tr>
+        <tr>
+            <td class="l-table-edit-td" colspan="4"><a href="#">浙江省商务厅行政许可申请材料接收凭证</a></td>
+        </tr>
+        <tr>
+            <td class="l-table-edit-td" colspan="4"><a href="#">浙江省商务厅行政许可申请材料补正通知书</a></td>
+        </tr>
+        <tr>
+            <td class="l-table-edit-td" colspan="4"><a href="#">浙江省商务厅行政许可申请受理通知书</a></td>
+        </tr>
+        <tr>
+            <td class="l-table-edit-td" colspan="4"><a href="#">浙江省商务厅行政许可申请不予受理通知书</a></td>
+        </tr>
+        <tr>
+            <td class="l-table-edit-td" colspan="4"><a href="#">浙江省商务厅行政许可决定书</a></td>
+        </tr>
+        <tr>
+            <td class="l-table-edit-td" colspan="4"><a href="#">浙江省商务厅不予许可决定书</a></td>
+        </tr>
+    </table>
+    <input type="submit" value="提交" id="Button1" class="l-button l-button-submit" />
+    <input type="reset" value="重置" id="Button2" class="l-button l-button-reset" />
+</form>
+<script type="text/javascript" src="js/city.js"></script>
+</body>
+</html>
