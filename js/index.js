@@ -37,6 +37,7 @@ $(function () {
     //树
     $("#tree1").ligerTree({
         checkbox:false,
+        btnClickToToggleOnly:false,
         nodeWidth:360,
         attribute:['nodename', 'url'],
         onSelect:function (node) {
