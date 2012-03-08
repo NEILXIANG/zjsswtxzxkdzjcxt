@@ -72,10 +72,6 @@ function f_addTab(tabid, text, url) {
         url:url
     });
 }
-//关闭tab选项卡
-function remove_tab() {
-    tab.removeSelectedTabItem();
-}
 //待办事宜
 function dcwj_auto_open() {
     var value = "welcome.html";
