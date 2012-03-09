@@ -9,7 +9,7 @@ body {
 }
 
 body a.l-button {
-    margin-left:400px;
+    margin-left: 400px;
 }
 
 .print_content p, .print_content div {
@@ -36,4 +36,13 @@ p.nh {
 
 .print_content p, .print_content div.input_left, .print_content div.input_right, .print_content {
     line-height: 60px;
+}
+
+.line {
+    float: left;
+    width: 100%;
+}
+
+div.indent_0 {
+    text-indent: 0;
 }
