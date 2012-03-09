@@ -72,21 +72,35 @@ function d_open1() {
     $.ligerDialog.open({ url:'bj_small.html', width:600, height:410, title:"办结" });
 }
 // isResize:true
-function c_open1() {
-    $.ligerDialog.open({ url:'xzcl_small.html', width:300, height:410 });
-}
+/*function c_open1() {
+ $.ligerDialog.open({ url:'xzcl_small.html', name:'sssd', width:300, height:410, buttons:[
+ { text:'确定', onclick:function (item, dialog) {
+ //提交连接
+ //dialog.setUrl("http://127.0.0.1/zjsswtxzxkdzjcxt/");
+ //提交 iframe 里的 form
+ //window.frames['ysl'].document.forms['form1'].submit();
+ var inputget = $(window.frames["sssd"].document).find("input").val();
+ console.log(inputget);
+ $("#txtName12").html(inputget);
+ dialog.hidden();
+ } },
+ { text:'取消', onclick:function (item, dialog) {
+ dialog.hidden();
+ } }
+ ], isResize:true
+ });
+ }*/
 function f_open1() {
     $.ligerDialog.open({ url:'list_small.html', width:700, height:400 });
 }
 function j_open1() {
     $.ligerDialog.open({ url:'jsgl_small.html', width:600, height:410 });
 }
-//打印框
-function p_open1() {
-    $.ligerDialog.open({ url:'print_small.html', width:400, height:410 });
-}
 function x_open1() {
     $.ligerDialog.open({ url:'zygl_small.html', width:700, height:440 });
+}
+function p_open1() {
+    $.ligerDialog.open({ url:'print_small.html', width:500, height:410 });
 }
 //用户管理
 function y_open1() {

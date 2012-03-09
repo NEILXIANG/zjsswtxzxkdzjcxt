@@ -5,9 +5,15 @@
     <title></title>
     <link type="text/css" rel="stylesheet" href="lib/ligerUI/skins/Aqua/css/ligerui-all.css" />
     <link type="text/css" rel="stylesheet" href="css/public.css" />
+    <link type="text/css" rel="stylesheet" href="css/print.css" media="print" />
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="lib/ligerUI/js/ligerui.all.js"></script>
+    <script type="text/javascript" src="js/jquery.printPage.js"></script>
     <script type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript">
+        //打印程序调用
+        $(".btnPrint").printPage();
+    </script>
 </head>
 <body>
 <div class="l-grid-header">
@@ -15,7 +21,6 @@
         <tr>
             <td width="30">序号</td>
             <td>打印文件名</td>
-            <td width="50">附件</td>
         </tr>
     </table>
 </div>
@@ -24,34 +29,29 @@
         <tr>
             <td width="30">1</td>
             <td><a target="_blank" href="print_1.html">浙江省商务厅行政许可申请不予受理通知书</a></td>
-            <td width="50"><a target="_blank" href="print_small_a.html">打印</a></td>
         </tr>
         <tr>
             <td>2</td>
             <td><a target="_blank" href="print_2.html">浙江省商务厅行政许可申请材料接收凭证</a></td>
-            <td><a target="_blank" href="print_small_a.html">打印</a></td>
         </tr>
         <tr>
             <td>3</td>
             <td><a target="_blank" href="print_3.html">浙江省商务厅行政许可决定书</a></td>
-            <td><a target="_blank" href="print_small_a.html">打印</a></td>
         </tr>
         <tr>
             <td>4</td>
             <td><a target="_blank" href="print_4.html">浙江省商务厅不予许可决定书</a></td>
-            <td><a target="_blank" href="print_small_a.html">打印</a></td>
         </tr>
         <tr>
             <td>5</td>
             <td><a target="_blank" href="print_5.html">浙江省商务厅行政许可申请材料补正通知书</a></td>
-            <td><a target="_blank" href="print_small_a.html">打印</a></td>
         </tr>
         <tr>
             <td>6</td>
             <td><a target="_blank" href="print_6.html">浙江省商务厅行政许可申请受理通知书</a></td>
-            <td><a target="_blank" href="print_small_a.html">打印</a></td>
         </tr>
     </table>
+    <a style="margin-top: 6px;" href="print_small_list.html" class="l-button btnPrint">打印</a>
 </div>
 </body>
 </html>
