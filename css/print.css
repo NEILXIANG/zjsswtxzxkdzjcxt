@@ -12,7 +12,28 @@ body {
     font-size: 18px;
 }
 
-.print_content p {
+.print_content p, .print_content div {
     line-height: 56px;
     text-indent: 2em;
+    font-size: 14px;
+}
+
+body {
+    font-size: 12px;
+}
+
+h2.text_ceter {
+    font-size: 20px;
+}
+
+.print_content p span {
+    float: none;
+}
+
+p.nh {
+    text-indent: 0;
+}
+
+.print_content p, .print_content div.input_left, .print_content div.input_right, .print_content {
+    line-height: 60px;
 }
