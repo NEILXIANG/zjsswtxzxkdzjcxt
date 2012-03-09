@@ -11,6 +11,17 @@
     <script type="text/javascript" src="lib/ligerUI/js/ligerui.all.js"></script>
     <script type="text/javascript" src="js/jquery.printPage.js"></script>
     <script type="text/javascript" src="js/public.js"></script>
+    <style type="text/css">
+        .print_content p, .print_content div.input_left, .print_content div.input_right, .print_content {
+            line-height: 30px;
+        }
+        div.indent_0{
+            font-size: 12px;
+            border-top: 1px solid #000;
+            width: 100%;
+            line-height: 24px;
+        }
+    </style>
     <script type="text/javascript">
         //打印程序调用
         $(".btnPrint").printPage();
@@ -18,11 +29,11 @@
 </head>
 <body>
 <h2 class="text_ceter">浙江省商务厅行政许可申请材料接收凭证</h2>
-
+<br /><br />
 <div class="print_content">
     <div class="input_right"><label>编号:</label>20120010001</div>
     <p class="nh">xxxxxxxxxxxxxxx:</p>
-
+    <br /><br />
     <p>
         <span>本厅已收到你（单位）提交的申请</span>xxxxxxxxxxxxxxxxxx行政许可下列材料。
     </p>
@@ -44,14 +55,13 @@
     </p>
 
     <p>以上申请材料如不齐全或者不符合法定形式，本厅将在5个工作日内告知。</p>
-
+    <br />
     <p class="text_right">浙江省商务厅业务审批章</p>
 
     <p class="text_right">2012年3月9日</p>
-
+    <br />
     <div class="line">
         <div class="input_left">送达人（签字）：xxxxxxxxxxxxxxxxxxxxxx</div>
-        <div class="input_right">2012年3月9日</div>
     </div>
     <div class="line">
         <div class="input_left">申请人通信地址：xxxxxxxxxxxxxxxxxxxxxx</div>
@@ -59,6 +69,8 @@
     <div class="line">
         <div class="input_left">联系电话：xxxxxxxxxxxxxxxxxxxxxxxx</div>
     </div>
+    <br /><br /><br /><br />
+
     <div class="input_left indent_0">请申请人于5日后登陆省商务厅门户网站信息公开栏目行政许可事项受理公告查询受理情况，网址www.zcom.gov.cn，查询码为1234。</div>
 </div>
 <a href="print_2.html" class="l-button btnPrint">打印</a>
