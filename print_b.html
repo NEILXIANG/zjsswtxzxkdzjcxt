@@ -5,15 +5,15 @@
     <title></title>
     <link type="text/css" rel="stylesheet" href="lib/ligerUI/skins/Aqua/css/ligerui-all.css" />
     <link type="text/css" rel="stylesheet" href="css/public.css" />
-    <link type="text/css" rel="stylesheet" href="css/print.css" />
+    <link type="text/css" rel="stylesheet" href="css/print.css" media="print" />
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="lib/ligerUI/js/ligerui.all.js"></script>
-    <script type="text/javascript" src="js/jquery.printPage.js"></script>
     <script type="text/javascript" src="js/public.js"></script>
-    <script type="text/javascript">
-        //打印程序调用
-        $(".btnPrint").printPage();
-    </script>
+    <style type="text/css">
+        a.l-button {
+            display: none;
+        }
+    </style>
 </head>
 <body>
 <h2 class="text_ceter">浙江省商务厅行政许可申请材料接收凭证</h2>
@@ -42,5 +42,6 @@
     <div class="input_right">联系电话：xxxxxxxxxxxxxxxxxxxxxxxx</div>
 </div>
 请申请人于5日后登陆省商务厅门户网站信息公开栏目行政许可事项受理公告查询受理情况，网址www.zcom.gov.cn，查询码为1234。
+<a href="#" class="l-button btnPrint">打印</a>
 </body>
 </html>

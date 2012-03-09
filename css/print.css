@@ -3,13 +3,13 @@ input, div.l-text, input.l-text-field, div.l-trigger, div.l-trigger-icon {
     background: none;
 }
 
-a.l-button {
-    display: none;
-}
-
 body {
     margin: 36px;
     font-size: 18px;
+}
+
+body a.l-button {
+    margin-left:400px;
 }
 
 .print_content p, .print_content div {
