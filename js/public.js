@@ -58,10 +58,10 @@ function open(url, name, width, height, title) {
             //window.frames['myFrame'].say();
             //提交 iframe 里的 form
             //window.frames['ysl'].document.forms['form1'].submit();
-        } },
+        }},
         { text:'取消', onclick:function (item, dialog) {
             dialog.hidden();
-        } }
+        }}
     ], isResize:true
     });
 }
