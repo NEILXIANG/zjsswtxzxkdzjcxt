@@ -48,6 +48,7 @@ $(function () {
         $(".txtName0,.txtName1").hide();
     });
 });
+//name 就是 iframe 的 id 和 name 值
 function open(url, name, width, height, title) {
     $.ligerDialog.open({ url:url, name:name, width:width, height:height, title:title, buttons:[
         { text:'确定', onclick:function (item, dialog) {
