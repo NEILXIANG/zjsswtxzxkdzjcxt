@@ -48,12 +48,12 @@ $(function () {
         $(".txtName0,.txtName1").hide();
     });
 });
-//预受理
-function a_open1() {
-    $.ligerDialog.open({ url:'ysl_small.html', name:'ysl', width:600, height:410, buttons:[
+function open(url, name, width, height, title) {
+    $.ligerDialog.open({ url:url, name:name, width:width, height:height, title:title, buttons:[
         { text:'确定', onclick:function (item, dialog) {
             //提交连接
-            dialog.setUrl("http://127.0.0.1/zjsswtxzxkdzjcxt/");
+            dialog.setUrl("#");
+            //window.frames['myFrame'].say();
             //提交 iframe 里的 form
             //window.frames['ysl'].document.forms['form1'].submit();
         } },
@@ -62,86 +62,4 @@ function a_open1() {
         } }
     ], isResize:true
     });
-}
-//承办、审核、批准
-function b_open1() {
-    $.ligerDialog.open({ url:'pause_small.html', width:600, height:410 });
-}
-//办结
-function d_open1() {
-    $.ligerDialog.open({ url:'bj_small.html', width:600, height:410, title:"办结" });
-}
-// isResize:true
-/*function c_open1() {
- $.ligerDialog.open({ url:'xzcl_small.html', name:'sssd', width:300, height:410, buttons:[
- { text:'确定', onclick:function (item, dialog) {
- //提交连接
- //dialog.setUrl("http://127.0.0.1/zjsswtxzxkdzjcxt/");
- //提交 iframe 里的 form
- //window.frames['ysl'].document.forms['form1'].submit();
- var inputget = $(window.frames["sssd"].document).find("input").val();
- console.log(inputget);
- $("#txtName12").html(inputget);
- dialog.hidden();
- } },
- { text:'取消', onclick:function (item, dialog) {
- dialog.hidden();
- } }
- ], isResize:true
- });
- }*/
-function f_open1() {
-    $.ligerDialog.open({ url:'list_small.html', width:700, height:400 });
-}
-function j_open1() {
-    $.ligerDialog.open({ url:'jsgl_small.html', width:600, height:410 });
-}
-function x_open1() {
-    $.ligerDialog.open({ url:'zygl_small.html', width:700, height:440 });
-}
-function p_open1() {
-    $.ligerDialog.open({ url:'print_small.html', width:500, height:410 });
-}
-//用户管理
-function y_open1() {
-    $.ligerDialog.open({ url:'xzck_small.html', name:'myFrame', width:300, height:410, buttons:[
-        { text:'确定', onclick:function (item, dialog) {
-            //提交连接
-            //dialog.setUrl("http://127.0.0.1/zjsswtxzxkdzjcxt/");
-            window.frames['myFrame'].say();
-            dialog.hidden();
-            //提交 iframe 里的 form
-            //window.frames['ysl'].document.forms['form1'].submit();
-        } },
-        { text:'取消', onclick:function (item, dialog) {
-            dialog.hidden();
-        } }
-    ]});
-}
-function z_open1() {
-    $.ligerDialog.open({ url:'yjzt_small.html', width:300, height:410 });
-}
-//模仿 window 外层窗口
-var wincount = 0;
-function title() {
-    return '流程配置 ' + ++wincount;
-}
-function window_open1() {
-    $.ligerDialog.open({ url:'lcpz_list.html', width:600, height:410, showMax:true, showToggle:true, showMin:true, isResize:true, modal:false, title:title() });
-}
-//模仿 window 内层窗口
-var wincount_child = 0;
-function title_100() {
-    return '流程配置添加 ' + ++wincount_child;
-}
-function window_open100() {
-    $.ligerDialog.open({ url:'lcpz_detail.html', width:500, height:350, showMax:true, showToggle:true, showMin:true, isResize:true, modal:false, title:title_100() });
-}
-//模仿 window 内层窗口
-var wincount_tjcl = 0;
-function title_200() {
-    return '添加材料 ' + ++wincount_tjcl;
-}
-function window_open200() {
-    $.ligerDialog.open({ url:'lcpz_list.html', width:600, height:410, showMax:true, showToggle:true, showMin:true, isResize:true, modal:false, title:title_200() });
 }
