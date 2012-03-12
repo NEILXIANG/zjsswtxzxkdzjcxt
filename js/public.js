@@ -54,6 +54,7 @@ function open(url, name, width, height, title) {
         { text:'确定', onclick:function (item, dialog) {
             //提交连接
             dialog.setUrl("#");
+            //运行 iframe 内的方法
             //window.frames['myFrame'].say();
             //提交 iframe 里的 form
             //window.frames['ysl'].document.forms['form1'].submit();
