@@ -8,6 +8,7 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="lib/ligerUI/js/ligerui.all.js"></script>
     <script type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
     <script type="text/javascript" src="lib/jquery-validation/jquery.validate.min.js"></script>
     <script type="text/javascript" src="lib/jquery-validation/jquery.metadata.js"></script>
     <script type="text/javascript" src="lib/jquery-validation/messages_cn.js"></script>
@@ -17,53 +18,6 @@
             float: left;
         }
     </style>
-    <script type="text/javascript">
-        $(function () {
-            //form提交未填写提示
-            $.metadata.setType("attr", "validate");
-            var v = $("form").validate({
-                debug:true,
-                errorPlacement:function (lable, element) {
-                    if (element.hasClass("l-textarea")) {
-                        element.ligerTip({ content:lable.html(), target:element[0] });
-                    }
-                    else if (element.hasClass("l-text-field")) {
-                        element.parent().ligerTip({ content:lable.html(), target:element[0] });
-                    }
-                    else {
-                        lable.appendTo(element.parents("td:first").next("td"));
-                    }
-                },
-                success:function (lable) {
-                    lable.ligerHideTip();
-                    lable.remove();
-                },
-                submitHandler:function () {
-                    $("form .l-text,.l-textarea").ligerHideTip();
-                    console.log("Submitted!")
-                }
-            });
-        });
-        //子页面的 val 数据传到父页面上的 textarea 内
-        function c_open1() {
-            $.ligerDialog.open({ url:'xzcl_small.html', name:'frame1', width:300, height:410, buttons:[
-                { text:'确定', onclick:function (item, dialog) {
-                    //提交连接
-                    //dialog.setUrl("http://127.0.0.1/zjsswtxzxkdzjcxt/");
-                    //提交 iframe 里的 form
-                    //window.frames['ysl'].document.forms['form1'].submit();
-                    var inputget = $(window.frames["frame1"].document).find("#hiddenUid").val();
-                    //console.log(inputget);
-                    $("#txtName12").html(inputget);
-                    dialog.hidden();
-                } },
-                { text:'取消', onclick:function (item, dialog) {
-                    dialog.hidden();
-                } }
-            ], isResize:true
-            });
-        }
-    </script>
 </head>
 <body>
 <form name="form1" method="post" action="yhgl_list.html" id="password_form1">
@@ -112,7 +66,7 @@
             </td>
             <td align="right" class="l-table-edit-td"><label for="txtName6">申报材料:</label></td>
             <td align="left" class="l-table-edit-td">
-                <input name="txtName" class="l-text" type="text" id="txtName6" ltype="text" /><a onclick="c_open1()" href="javascript:void(0)" class="l-button">选择材料</a>
+                <input name="txtName" class="l-text" type="text" id="txtName6" ltype="text" /><a onclick="open('xzcl_small.html','frame1',300,410,'选择材料')" href="javascript:void(0)" class="l-button">选择材料</a>
             </td>
         </tr>
         <tr>

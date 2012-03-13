@@ -6,8 +6,6 @@
  * To change this template use File | Settings | File Templates.
  */
 $(function () {
-    //调用 form样式
-    $("form").ligerForm();
     //table 焦点色
     $(".table-even tr").hover(function () {
             $(this).addClass("bgd");
@@ -53,11 +51,12 @@ function open(url, name, width, height, title) {
     $.ligerDialog.open({ url:url, name:name, width:width, height:height, title:title, buttons:[
         { text:'确定', onclick:function (item, dialog) {
             //提交连接
-            dialog.setUrl("#");
+            //dialog.setUrl("#");
             //运行 iframe 内的方法
-            //window.frames['myFrame'].say();
+            //window.frames['myFrame'].func();
             //提交 iframe 里的 form
             //window.frames['ysl'].document.forms['form1'].submit();
+            dialog.hidden();
         }},
         { text:'取消', onclick:function (item, dialog) {
             dialog.hidden();
