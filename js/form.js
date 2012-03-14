@@ -15,11 +15,9 @@ $(function () {
         errorPlacement:function (lable, element) {
             if (element.hasClass("l-textarea")) {
                 element.ligerTip({ content:lable.html(), target:element[0] });
-            }
-            else if (element.hasClass("l-text-field")) {
+            } else if (element.hasClass("l-text-field")) {
                 element.parent().ligerTip({ content:lable.html(), target:element[0] });
-            }
-            else {
+            } else {
                 lable.appendTo(element.parents("td:first").next("td"));
             }
         },
