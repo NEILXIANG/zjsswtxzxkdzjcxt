@@ -53,9 +53,9 @@ function open(url, name, width, height, title) {
             //提交连接
             //dialog.setUrl("#");
             //运行 iframe 内的方法
-            //window.frames['myFrame'].func();
+            window.frames[name].func();
             //提交 iframe 里的 form
-            //window.frames['ysl'].document.forms['form1'].submit();
+            //window.frames[name].document.forms['form1'].submit();
             dialog.hidden();
         }},
         { text:'取消', onclick:function (item, dialog) {
