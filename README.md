@@ -19,3 +19,7 @@
 ### 2012年3月12日
 
 把 Dialog 方法升级了一下，简化 public.js 代码
+
+### 2012年3月16日
+
+把 Dialog 页面上的 checkbox 传值功能完成（textarea）
