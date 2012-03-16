@@ -12,12 +12,6 @@
     <script type="text/javascript" src="lib/jquery-validation/jquery.validate.min.js"></script>
     <script type="text/javascript" src="lib/jquery-validation/jquery.metadata.js"></script>
     <script type="text/javascript" src="lib/jquery-validation/messages_cn.js"></script>
-    <style type="text/css">
-        .l-text-wrapper {
-            margin-right: 3px;
-            float: left;
-        }
-    </style>
 </head>
 <body>
 <form name="form1" method="post" action="yhgl_list.html" id="password_form1">
@@ -88,7 +82,13 @@
         <tr>
             <td align="right" class="l-table-edit-td"><label for="txtName12">事由说明:</label></td>
             <td colspan="3" align="left" class="l-table-edit-td">
-                <textarea id="txtName12" style="width: 700px" rows="6" class="l-textarea" value="asd"></textarea>
+                <textarea id="txtName12" style="width: 700px" rows="6" class="l-textarea"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" class="l-table-edit-td"><label for="txtName13"></label>测试:</td>
+            <td colspan="3" align="left" class="l-table-edit-td textarea_input">
+                <textarea onclick="open('xzck_small.html','xzbm',300,410,'选择部门')" id="txtName13" name="txtName13" style="width: 700px" rows="6" class="l-textarea"></textarea>
             </td>
         </tr>
     </table>

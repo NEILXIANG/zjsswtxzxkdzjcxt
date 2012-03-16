@@ -56,7 +56,7 @@ function open(url, name, width, height, title) {
             window.frames[name].func();
             //提交 iframe 里的 form
             //window.frames[name].document.forms['form1'].submit();
-            dialog.hidden();
+            dialog.close();
         }},
         { text:'取消', onclick:function (item, dialog) {
             dialog.hidden();

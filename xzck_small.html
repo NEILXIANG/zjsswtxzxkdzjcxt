@@ -8,6 +8,24 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="lib/ligerUI/js/ligerui.all.js"></script>
     <script type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript">
+        function func() {
+            var oform = document.form_xzck_small
+            var len = oform.elements.length;
+            var allstr = "";
+            for (var i = 0; i < len; i++) {
+                if (oform.elements[i].checked) {
+                    var s = oform.elements[i].value;
+                    if (allstr != "") {
+                        allstr += "\r\n"
+                    }
+                    allstr += s;
+                }
+
+            }
+            parent.window.document.getElementById("txtName13").innerHTML = allstr;
+        }
+    </script>
 </head>
 <body>
 <div class="l-grid-header">
@@ -19,49 +37,50 @@
     </table>
 </div>
 <div class="l-grid-body l-scroll" id="gh">
-    <table class="table-even" width="100%">
-        <tr>
-            <td width="30"><input type="checkbox" name="checkname" /></td>
-            <td>商发处</td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" name="checkname" /></td>
-            <td>秩序处</td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" name="checkname" /></td>
-            <td>市场处</td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" name="checkname" /></td>
-            <td>机电处</td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" name="checkname" /></td>
-            <td>开发处</td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" name="checkname" /></td>
-            <td>网络中心</td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" name="checkname" /></td>
-            <td>外贸处</td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" name="checkname" /></td>
-            <td>外资处</td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" name="checkname" /></td>
-            <td>财务处</td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" name="checkname" /></td>
-            <td>外经处</td>
-        </tr>
-    </table>
+    <form id="form_xzck_small" name="form_xzck_small">
+        <table class="table-even" width="100%">
+            <tr>
+                <td width="30"><input id="sd" type="checkbox" name="checkname" value="商发处" /></td>
+                <td>商发处</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkname" value="秩序处" /></td>
+                <td>秩序处</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkname" value="市场处" /></td>
+                <td>市场处</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkname" value="机电处" /></td>
+                <td>机电处</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkname" value="开发处" /></td>
+                <td>开发处</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkname" value="网络中心" /></td>
+                <td>网络中心</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkname" value="外贸处" /></td>
+                <td>外贸处</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkname" value="外资处" /></td>
+                <td>外资处</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkname" value="财务处" /></td>
+                <td>财务处</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkname" value="外经处" /></td>
+                <td>外经处</td>
+            </tr>
+        </table>
+    </form>
 </div>
-<!--<input type="button" class="l-button l-button-submit" id="Button3" value="提交" name="Button3" />-->
 </body>
 </html>
