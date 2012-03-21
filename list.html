@@ -8,6 +8,12 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="lib/ligerUI/js/ligerui.all.js"></script>
     <script type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //调用 form样式
+            $("form").ligerForm();
+        });
+    </script>
 </head>
 <body>
 <div id="toptoolbar" class="l-toolbar">
@@ -20,70 +26,152 @@
 
     <div class="l-clear"></div>
 </div>
-<div class="l-panel-search" style="padding-left: 130px;">
-    <div class="l-panel-search-item">状态：</div>
-    <div class="l-panel-search-item">
-        <select name="ddlDepart" id="ddlDepart" ltype="select">
-            <option value="0">选择</option>
-            <option value="1">受理</option>
-            <option value="2">承办</option>
-            <option value="3">审核</option>
-            <option value="4">批准</option>
-            <option value="5">办结</option>
-            <option value="6">退回</option>
-        </select>
+<form action="#" method="post">
+    <div class="l-panel-search" style="padding-left: 130px;">
+        <div class="l-panel-search-item">状态：</div>
+        <div class="l-panel-search-item">
+            <select name="ddlDepart" id="ddlDepart" ltype="select">
+                <option value="0">选择</option>
+                <option value="1">受理</option>
+                <option value="2">承办</option>
+                <option value="3">审核</option>
+                <option value="4">批准</option>
+                <option value="5">办结</option>
+                <option value="6">退回</option>
+            </select>
+        </div>
+        <div class="l-panel-search-item">受理时间：</div>
+        <div class="l-panel-search-item">
+            <input name="txtDate" type="text" id="txtDate0" ltype="date" />
+        </div>
+        <div class="l-panel-search-item">-</div>
+        <div class="l-panel-search-item">
+            <input name="txtDate" type="text" id="txtDate1" ltype="date" />
+        </div>
     </div>
-    <div class="l-panel-search-item">受理时间：</div>
-    <div class="l-panel-search-item">
-        <input name="txtDate" type="text" id="txtDate0" ltype="date" />
+    <div class="l-panel-search" style="padding-left: 130px;">
+        <div class="l-panel-search-item">受理单号：</div>
+        <div class="l-panel-search-item">
+            <input type="text" style="width: 110px;" />
+        </div>
+        <div class="l-panel-search-item">单位名称：</div>
+        <div class="l-panel-search-item">
+            <input type="text" style="width: 110px;" />
+        </div>
+        <div style="width:60px;" class="l-panel-search-item">
+            <input class="l-button" type="submit" value="搜索" />
+        </div>
     </div>
-    <div class="l-panel-search-item">-</div>
-    <div class="l-panel-search-item">
-        <input name="txtDate" type="text" id="txtDate1" ltype="date" />
-    </div>
-</div>
-<div class="l-panel-search" style="padding-left: 130px;">
-    <div class="l-panel-search-item">受理单号：</div>
-    <div class="l-panel-search-item">
-        <input type="text" style="width: 110px;" />
-    </div>
-    <div class="l-panel-search-item">单位名称：</div>
-    <div class="l-panel-search-item">
-        <input type="text" style="width: 110px;" />
-    </div>
-    <div style="width:60px;" class="l-panel-search-item">
-        <input class="l-button" type="submit" value="搜索" />
-    </div>
-</div>
+</form>
 <div class="l-grid-header">
     <table width="100%">
         <tr>
-            <td width="3%"><input type="checkbox" id="checkall" /></td>
-            <td width="7%">受理单号</td>
-            <td width="10%">受理名称</td>
-            <td width="17%">申请单位</td>
-            <td width="10%">当前状态</td>
-            <td width="10%">接收日期</td>
-            <td width="10%">办结日期</td>
-            <td width="10%">受理日期</td>
-            <td width="10%">截止日期</td>
-            <td width="13%">操作</td>
+            <td width="15"><input type="checkbox" id="checkall" /></td>
+            <td width="60">受理单号</td>
+            <td width="70">受理名称</td>
+            <td width="150">申请单位</td>
+            <td width="70">当前状态</td>
+            <td width="70">接收日期</td>
+            <td width="70">办结日期</td>
+            <td width="70">受理日期</td>
+            <td width="70">截止日期</td>
+            <td width="">操作</td>
         </tr>
     </table>
 </div>
-<div class="l-grid-body l-scroll">
+<div class="l-grid-body l-scroll" id="gh">
     <table class="table-even" width="100%">
         <tr>
-            <td width="3%"><input type="checkbox" name="checkname" /></td>
-            <td width="7%">755</td>
-            <td width="10%">受理名称</td>
-            <td width="17%">浙江东方集团茂业进出口有限公司</td>
-            <td width="10%">当前状态</td>
-            <td width="10%">2012-02-08 15:49</td>
-            <td width="10%">2012-02-08 15:48</td>
-            <td width="10%">2012-02-13 15:48</td>
-            <td width="10%">2012-02-13 15:48</td>
-            <td width="13%" class="td_center">
+            <td width="15"><input type="checkbox" name="checkname" /></td>
+            <td width="60">755</td>
+            <td width="70">受理名称</td>
+            <td width="150">浙江东方集团茂业进出口有限公司</td>
+            <td width="70">当前状态</td>
+            <td width="70">2012-02-08 15:49</td>
+            <td width="70">2012-02-08 15:48</td>
+            <td width="70">2012-02-13 15:48</td>
+            <td width="70">2012-02-13 15:48</td>
+            <td width="" class="td_center">
+                <a title="修改" href="list_detail_a.html"><img src="img/icon_xg.png" alt="修改" /></a>
+                <a title="打印" href="javascript:void(0)" onclick="open_box('print_small.html','dy',500,410,'打印')"><img src="img/icon_pri.png" alt="打印" /></a>
+                <a title="联单" href="#"><img src="img/icon_ld.png" alt="联单" /></a>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="checkname" /></td>
+            <td>755</td>
+            <td>受理名称</td>
+            <td>浙江东方集团茂业进出口有限公司</td>
+            <td>当前状态</td>
+            <td>2012-02-08 15:49</td>
+            <td>2012-02-08 15:48</td>
+            <td>2012-02-13 15:48</td>
+            <td>2012-02-13 15:48</td>
+            <td class="td_center">
+                <a title="修改" href="list_detail_a.html"><img src="img/icon_xg.png" alt="修改" /></a>
+                <a title="打印" href="javascript:void(0)" onclick="open_box('print_small.html','dy',500,410,'打印')"><img src="img/icon_pri.png" alt="打印" /></a>
+                <a title="联单" href="#"><img src="img/icon_ld.png" alt="联单" /></a>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="checkname" /></td>
+            <td>755</td>
+            <td>受理名称</td>
+            <td>浙江东方集团茂业进出口有限公司</td>
+            <td>当前状态</td>
+            <td>2012-02-08 15:49</td>
+            <td>2012-02-08 15:48</td>
+            <td>2012-02-13 15:48</td>
+            <td>2012-02-13 15:48</td>
+            <td class="td_center">
+                <a title="修改" href="list_detail_a.html"><img src="img/icon_xg.png" alt="修改" /></a>
+                <a title="打印" href="javascript:void(0)" onclick="open_box('print_small.html','dy',500,410,'打印')"><img src="img/icon_pri.png" alt="打印" /></a>
+                <a title="联单" href="#"><img src="img/icon_ld.png" alt="联单" /></a>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="checkname" /></td>
+            <td>755</td>
+            <td>受理名称</td>
+            <td>浙江东方集团茂业进出口有限公司</td>
+            <td>当前状态</td>
+            <td>2012-02-08 15:49</td>
+            <td>2012-02-08 15:48</td>
+            <td>2012-02-13 15:48</td>
+            <td>2012-02-13 15:48</td>
+            <td class="td_center">
+                <a title="修改" href="list_detail_a.html"><img src="img/icon_xg.png" alt="修改" /></a>
+                <a title="打印" href="javascript:void(0)" onclick="open_box('print_small.html','dy',500,410,'打印')"><img src="img/icon_pri.png" alt="打印" /></a>
+                <a title="联单" href="#"><img src="img/icon_ld.png" alt="联单" /></a>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="checkname" /></td>
+            <td>755</td>
+            <td>受理名称</td>
+            <td>浙江东方集团茂业进出口有限公司</td>
+            <td>当前状态</td>
+            <td>2012-02-08 15:49</td>
+            <td>2012-02-08 15:48</td>
+            <td>2012-02-13 15:48</td>
+            <td>2012-02-13 15:48</td>
+            <td class="td_center">
+                <a title="修改" href="list_detail_a.html"><img src="img/icon_xg.png" alt="修改" /></a>
+                <a title="打印" href="javascript:void(0)" onclick="open_box('print_small.html','dy',500,410,'打印')"><img src="img/icon_pri.png" alt="打印" /></a>
+                <a title="联单" href="#"><img src="img/icon_ld.png" alt="联单" /></a>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="checkname" /></td>
+            <td>755</td>
+            <td>受理名称</td>
+            <td>浙江东方集团茂业进出口有限公司</td>
+            <td>当前状态</td>
+            <td>2012-02-08 15:49</td>
+            <td>2012-02-08 15:48</td>
+            <td>2012-02-13 15:48</td>
+            <td>2012-02-13 15:48</td>
+            <td class="td_center">
                 <a title="修改" href="list_detail_a.html"><img src="img/icon_xg.png" alt="修改" /></a>
                 <a title="打印" href="javascript:void(0)" onclick="open_box('print_small.html','dy',500,410,'打印')"><img src="img/icon_pri.png" alt="打印" /></a>
                 <a title="联单" href="#"><img src="img/icon_ld.png" alt="联单" /></a>

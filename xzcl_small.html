@@ -8,6 +8,23 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="lib/ligerUI/js/ligerui.all.js"></script>
     <script type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript">
+        function func() {
+            var oform = document.form_xzck_small;
+            var len = oform.elements.length;
+            var allstr = "";
+            for (var i = 0; i < len; i++) {
+                if (oform.elements[i].checked) {
+                    var s = oform.elements[i].value;
+                    if (allstr != "") {
+                        allstr += "\r\n";
+                    }
+                    allstr += s;
+                }
+            }
+            parent.window.document.getElementById("txtName6").value = allstr;
+        }
+    </script>
 </head>
 <body>
 <div class="l-grid-header">
@@ -19,48 +36,50 @@
     </table>
 </div>
 <div class="l-grid-body l-scroll" id="gh">
-    <table class="table-even" width="100%">
-        <tr>
-            <td width="30"><input id="hiddenUid" type="checkbox" name="checkname" value="材料一" /></td>
-            <td>材料一</td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" name="checkname" value="材料二" /></td>
-            <td>材料二</td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" name="checkname" value="材料三" /></td>
-            <td>材料三</td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" name="checkname" value="材料四" /></td>
-            <td>材料四</td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" name="checkname" value="材料五" /></td>
-            <td>材料五</td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" name="checkname" value="材料六" /></td>
-            <td>材料六</td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" name="checkname" value="材料七" /></td>
-            <td>材料七</td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" name="checkname" value="材料八" /></td>
-            <td>材料八</td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" name="checkname" value="材料九" /></td>
-            <td>材料九</td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" name="checkname" value="材料十" /></td>
-            <td>材料十</td>
-        </tr>
-    </table>
+    <form id="form_xzck_small" name="form_xzck_small">
+        <table class="table-even" width="100%">
+            <tr>
+                <td width="30"><input id="hiddenUid" type="checkbox" name="checkname" value="材料一" /></td>
+                <td>材料一</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkname" value="材料二" /></td>
+                <td>材料二</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkname" value="材料三" /></td>
+                <td>材料三</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkname" value="材料四" /></td>
+                <td>材料四</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkname" value="材料五" /></td>
+                <td>材料五</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkname" value="材料六" /></td>
+                <td>材料六</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkname" value="材料七" /></td>
+                <td>材料七</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkname" value="材料八" /></td>
+                <td>材料八</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkname" value="材料九" /></td>
+                <td>材料九</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="checkname" value="材料十" /></td>
+                <td>材料十</td>
+            </tr>
+        </table>
+    </form>
 </div>
 </body>
 </html>
