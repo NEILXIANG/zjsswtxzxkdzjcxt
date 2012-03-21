@@ -23,3 +23,7 @@
 ### 2012年3月16日
 
 把 Dialog 页面上的 checkbox 传值功能完成（textarea）
+
+### 2012年3月21日
+
+open 方法重命名，IE浏览器保留字段 open 囧了
