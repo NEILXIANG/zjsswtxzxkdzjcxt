@@ -32,76 +32,125 @@
         <tr>
             <td width="30">1</td>
             <td>
-                <a style="float: left;" href="javascript:Design1()">浙江省商务厅行政许可申请不予受理通知书(套打)</a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="print_small_a.html">材料清单</a>
+                <a style="float: left;" href="javascript:Design1()">浙江省商务厅行政许可申请材料接收凭证(套打)</a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="print_small_a.html">材料清单</a>
             </td>
         </tr>
         <tr>
             <td>2</td>
             <td>
-                <a style="float: left;" href="print_b.html">浙江省商务厅行政许可申请不予受理通知书</a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="print_small_a.html">材料清单</a>
+                <a style="float: left;" href="javascript:Design2()">浙江省商务厅行政许可申请受理通知书</a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="print_small_a.html">材料清单</a>
             </td>
         </tr>
         <tr>
             <td>3</td>
             <td>
-                <a style="float: left;" href="print_a.html">浙江省商务厅行政许可申请不予受理通知书</a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="print_small_a.html">材料清单</a>
+                <a style="float: left;" href="javascript:Design3()">浙江省商务厅行政许可决定书</a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="print_small_a.html">材料清单</a>
             </td>
         </tr>
         <tr>
             <td>4</td>
             <td>
-                <a style="float: left;" href="print_b.html">浙江省商务厅行政许可申请不予受理通知书</a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="print_small_a.html">材料清单</a>
+                <a style="float: left;" href="javascript:Design4()">浙江省商务厅行政许可申请不予受理通知书</a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="print_small_a.html">材料清单</a>
             </td>
         </tr>
         <tr>
             <td>5</td>
             <td>
-                <a style="float: left;" href="print_a.html">浙江省商务厅行政许可申请不予受理通知书</a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="print_small_a.html">材料清单</a>
+                <a style="float: left;" href="javascript:Design5()">浙江省商务厅行政许可申请不予受理通知书</a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="print_small_a.html">材料清单</a>
             </td>
         </tr>
         <tr>
             <td>6</td>
             <td>
-                <a style="float: left;" href="print_b.html">浙江省商务厅行政许可申请不予受理通知书</a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="print_small_a.html">材料清单</a>
+                <a style="float: left;" href="javascript:Design6()">浙江省商务厅行政许可申请不予受理通知书</a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="print_small_a.html">材料清单</a>
             </td>
         </tr>
     </table>
 </div>
 <script type="text/javascript">
     var LODOP; //声明为全局变量
-    var bm = "20120010001";
-    var cl = "1、材料一\n2、材料二\n3、材料三\n4、材料四\n5、材料五";
+    //浙江省商务厅行政许可申请材料接收凭证
     function Design1() {
         CreateFullBill();
         LODOP.PRINT_DESIGN();
     }
     function CreateFullBill() {
+        var bm = "20120010001";
         LODOP = getLodop(document.getElementById('LODOP_OB'), document.getElementById('LODOP_EM'));
-        LODOP.PRINT_INITA(-1,-25,794,1123,"打印控件功能演示_Lodop功能_装载背景图");
+        LODOP.PRINT_INITA(-1, -25, 794, 1123, "浙江省商务厅行政许可申请材料接收凭证");
         LODOP.ADD_PRINT_SETUP_BKIMG("<img border='0' src='img/test.png'>");
-        LODOP.ADD_PRINT_TEXT(316,114,167,31,"寄件人姓名");
-        LODOP.SET_PRINT_STYLEA(0,"FontSize",14);
-        LODOP.SET_PRINT_STYLEA(0,"Alignment",2);
-        LODOP.ADD_PRINT_TEXT(246,562,141,31,bm);
-        LODOP.SET_PRINT_STYLEA(0,"FontSize",16);
-        LODOP.SET_PRINT_STYLEA(0,"Alignment",2);
-        LODOP.ADD_PRINT_TEXT(355,485,143,31,"新加文本12");
-        LODOP.SET_PRINT_STYLEA(0,"FontSize",14);
-        LODOP.SET_PRINT_STYLEA(0,"Alignment",2);
-        LODOP.ADD_PRINT_TEXT(431,147,540,149,cl);
-        LODOP.SET_PRINT_STYLEA(0,"FontSize",15);
-        LODOP.ADD_PRINT_TEXT(806,372,196,31,"2012年3月21日");
-        LODOP.SET_PRINT_STYLEA(0,"FontSize",14);
-        LODOP.SET_PRINT_STYLEA(0,"Alignment",2);
-        LODOP.ADD_PRINT_TEXT(879,310,158,31,"新加文本15");
-        LODOP.SET_PRINT_STYLEA(0,"FontSize",14);
-        LODOP.ADD_PRINT_TEXT(876,518,196,31,"2012年3月21日");
-        LODOP.SET_PRINT_STYLEA(0,"FontSize",14);
-        LODOP.SET_PRINT_STYLEA(0,"Alignment",2);
-        LODOP.ADD_PRINT_TEXT(917,310,201,31,"新加文本17");
-        LODOP.SET_PRINT_STYLEA(0,"FontSize",14);
-        LODOP.ADD_PRINT_TEXT(916,612,154,31,"12345678910");
-        LODOP.SET_PRINT_STYLEA(0,"FontSize",14);
+        LODOP.ADD_PRINT_TEXT(322, 114, 167, 31, "寄件人姓名");
+        LODOP.SET_PRINT_STYLEA(0, "FontSize", 14);
+        LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+        LODOP.ADD_PRINT_TEXT(246, 562, 141, 31, bm);
+        LODOP.SET_PRINT_STYLEA(0, "FontSize", 16);
+        LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+        LODOP.ADD_PRINT_TEXT(355, 485, 143, 31, "新加文本12");
+        LODOP.SET_PRINT_STYLEA(0, "FontSize", 14);
+        LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+        LODOP.ADD_PRINT_TEXT(619, 451, 196, 31, "2012年3月21日");
+        LODOP.SET_PRINT_STYLEA(0, "FontSize", 14);
+        LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+        LODOP.ADD_PRINT_TEXT(699, 263, 158, 31, "新加文本15");
+        LODOP.SET_PRINT_STYLEA(0, "FontSize", 14);
+        LODOP.ADD_PRINT_TEXT(742, 270, 201, 31, "新加文本17");
+        LODOP.SET_PRINT_STYLEA(0, "FontSize", 14);
+        LODOP.ADD_PRINT_TEXT(784, 216, 154, 31, "12345678910");
+        LODOP.SET_PRINT_STYLEA(0, "FontSize", 14);
+    }
+    //浙江省商务厅行政许可申请受理通知书
+    function Design2() {
+        sqsl();
+        LODOP.PRINT_DESIGN();
+    }
+    function sqsl() {
+        LODOP = getLodop(document.getElementById('LODOP_OB'), document.getElementById('LODOP_EM'));
+        LODOP.PRINT_INITA(-1, -25, 794, 1123, "浙江省商务厅行政许可申请受理通知书");
+        LODOP.ADD_PRINT_SETUP_BKIMG("<img border='0' src='img/sqsl.png'>");
+        LODOP.ADD_PRINT_TEXT(370, 114, 167, 31, "寄件人姓名");
+        LODOP.SET_PRINT_STYLEA(0, "FontSize", 14);
+        LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+        LODOP.ADD_PRINT_TEXT(292, 562, 141, 31, "20120010001");
+        LODOP.SET_PRINT_STYLEA(0, "FontSize", 16);
+        LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+        LODOP.ADD_PRINT_TEXT(411, 375, 300, 31, "新加文本12");
+        LODOP.SET_PRINT_STYLEA(0, "FontSize", 14);
+        LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+        LODOP.ADD_PRINT_TEXT(491, 615, 56, 31, "2");
+        LODOP.SET_PRINT_STYLEA(0, "FontSize", 14);
+        LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+        LODOP.ADD_PRINT_TEXT(769, 352, 201, 31, "新加文本17");
+        LODOP.SET_PRINT_STYLEA(0, "FontSize", 14);
+        LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+    }
+    //浙江省商务厅行政许可决定书
+    function Design3() {
+        xkjds();
+        LODOP.PRINT_DESIGN();
+    }
+    function xkjds() {
+        LODOP = getLodop(document.getElementById('LODOP_OB'), document.getElementById('LODOP_EM'));
+        LODOP.PRINT_INITA(-1, -25, 794, 1123, "浙江省商务厅行政许可决定书");
+        LODOP.ADD_PRINT_SETUP_BKIMG("<img border='0' src='img/xkjds.png'>");
+        LODOP.ADD_PRINT_TEXT(368, 114, 167, 31, "寄件人姓名");
+        LODOP.SET_PRINT_STYLEA(0, "FontSize", 14);
+        LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+        LODOP.ADD_PRINT_TEXT(293, 562, 141, 31, "20120010001");
+        LODOP.SET_PRINT_STYLEA(0, "FontSize", 16);
+        LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+        LODOP.ADD_PRINT_TEXT(408, 290, 110, 31, "新加文本12");
+        LODOP.SET_PRINT_STYLEA(0, "FontSize", 14);
+        LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+        LODOP.ADD_PRINT_TEXT(408, 430, 46, 31, "12");
+        LODOP.SET_PRINT_STYLEA(0, "FontSize", 14);
+        LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+        LODOP.ADD_PRINT_TEXT(408, 497, 46, 31, "30");
+        LODOP.SET_PRINT_STYLEA(0, "FontSize", 14);
+        LODOP.ADD_PRINT_TEXT(525, 162, 557, 129, "1、新加文本17\n2、新加文本17\n3、新加文本17\n...(省略)");
+        LODOP.SET_PRINT_STYLEA(0, "FontSize", 14);
+        LODOP.ADD_PRINT_TEXT(850, 416, 190, 31, "2012年12月12日");
+        LODOP.SET_PRINT_STYLEA(0, "FontSize", 14);
+        LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
     }
 </script>
 </body>
