@@ -1,7 +1,10 @@
-.wrapper {
-    width: 100%;
-    min-width: 960px;
+html {
     background: #d91d00 url("../img/login_bg.gif") repeat-x;
+}
+
+.wrapper {
+    width: 1004px;
+    margin: 0 auto;
 }
 
 .login_top {
