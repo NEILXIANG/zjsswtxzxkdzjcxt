@@ -1,0 +1,222 @@
+.banner {
+    width: 900px;
+    height: 96px;
+    background: url(../img/banner.jpg) no-repeat;
+    border-bottom: 1px solid #a40006;
+    margin-bottom: 1px;
+}
+
+.banner h1 {
+    text-indent: -9999px;
+}
+
+.navigate span {
+    position: absolute;
+    color: #FFF;
+    font-weight: bold;
+    position: absolute;
+    left: 22px;
+    top: 6px;
+}
+
+.navigate a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    position: absolute;
+    right: 22px;
+    top: 6px;
+}
+
+.login-ba {
+    background: url(../img/login_01.gif) repeat-x;
+    width: 100%;
+    height: 36px;
+    position: relative;
+}
+
+.login-tittle {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top: 6px;
+    left: 36px;
+}
+
+.login-help {
+    background: url(../img/login_02.gif) no-repeat;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    border: 0 none;
+    position: absolute;
+    top: 8px;
+    right: 24px;
+}
+
+.login-content {
+    width: 350px;
+    margin-top: 36px;
+    position: absolute;
+    top: 20%;
+    left: 33%;
+}
+
+.login-content-t span {
+    color: #22416d;
+    font-weight: bold;
+    position: absolute;
+    top: 3px;
+    left: 12px
+}
+
+.l-table-edit {
+    width: 350px;
+    margin-top: 12px;
+}
+
+.l-table-edit td {
+    height: 28px;
+}
+
+.l-button-submit {
+    margin: 12px auto;
+    width: 60px;
+    height: 22px;
+}
+
+.register-content {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.register-content table {
+    border-left: 1px solid #F9E6BB;
+    border-top: 1px solid #F9E6BB;
+}
+
+.register-content td {
+    background: #fff;
+    height: 28px;
+    border-bottom: 1px solid #F9E6BB;
+    border-right: 1px solid #F9E6BB;
+    color: #333333;
+}
+
+.register-content td input {
+    margin-left: 6px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.register-content td select {
+    margin-left: 6px;
+}
+
+.register-content td span {
+    color: #999999;
+    margin-left: 6px;
+}
+
+td.row {
+    background: #FEF7EF;
+    color: #C80702;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+td.reg-tit {
+    background: #FEF7EF;
+    text-align: right;
+    font-weight: bold;
+}
+
+td span.red {
+    color: #F00;
+}
+
+body {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    background: none;
+}
+
+.l-button, .l-button:hover {
+    background: url(../img/table_09.gif) no-repeat;
+    border: 0 none;
+    width: 108px;
+    height: 32px;
+    font-weight: bold;
+    color: #000;
+}
+
+.submit-btn input#Button1 {
+    font-size: 14px;
+    line-height: 32px;
+    height: 32px;
+}
+
+.l-text {
+    margin-left: 6px;
+    float: left;
+    display: inline;
+    width: 206px;
+}
+
+.register-content td input.yz {
+    margin-left: 0;
+}
+
+.l-text-field {
+    top: 1px;
+}
+
+td p {
+    line-height: 30px;
+    margin-left: 6px;
+}
+
+td {
+    word-wrap: break-word;
+}
+
+.submit-btn {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+.reg-tit {
+    line-height: 24px;
+    padding: 3px;
+}
+
+.toplot {
+    padding-top: 3px;
+}
+
+td .p_icon {
+    border-bottom: 0 none;
+    position: relative;
+    padding-left: 26px;
+}
+
+td p.p_icon b {
+    -moz-transition: -moz -transform .2s ease -in 0s;
+    border: 4px solid #fff;
+    border-left-color: #ff6600;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    width: 0
+}
