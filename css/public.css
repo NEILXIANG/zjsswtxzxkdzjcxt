@@ -274,3 +274,9 @@ input[ltype="text"] {
 .txtName0, .txtName1 {
     display: none;
 }
+
+.l-toolbar span.fg {
+    margin: 0 4px 0 6px;
+    float: left;
+    color: #005799;
+}
