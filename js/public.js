@@ -47,7 +47,7 @@ $(function () {
     });
 });
 //name 就是 iframe 的 id 和 name 值
-function open_box(url, name, width, height, title) {
+var open_box = function (url, name, width, height, title) {
     $.ligerDialog.open({ url:url, name:name, width:width, height:height, title:title, buttons:[
         { text:'确定', onclick:function (item, dialog) {
             //提交连接
@@ -63,4 +63,4 @@ function open_box(url, name, width, height, title) {
         }}
     ], isResize:true
     });
-}
+};
