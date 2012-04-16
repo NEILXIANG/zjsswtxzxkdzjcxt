@@ -57,7 +57,7 @@ $(function () {
     dcwj_auto_open();
     $("#pageloading").hide();
 });
-function f_heightChanged(options) {
+var f_heightChanged = function (options) {
     if (tab) {
         tab.addHeight(options.diff);
     }
@@ -65,7 +65,7 @@ function f_heightChanged(options) {
         accordion.setHeight(options.middleHeight - 24);
     }
 }
-function f_addTab(tabid, text, url) {
+var f_addTab = function (tabid, text, url) {
     tab.addTabItem({
         tabid:tabid,
         text:text,
@@ -73,12 +73,12 @@ function f_addTab(tabid, text, url) {
     });
 }
 //待办事宜
-function dcwj_auto_open() {
+var dcwj_auto_open = function () {
     var value = "welcome.html";
     tab.addTabItem({ url:value, text:"待办事宜", showClose:false });
 }
 //报表管理
-function xmsh() {
+var xmsh = function () {
     var value = "bbgl_list.html";
     tab.addTabItem({ url:value, text:"报表管理" });
 }
