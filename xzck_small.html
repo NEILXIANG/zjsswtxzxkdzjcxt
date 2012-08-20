@@ -23,7 +23,9 @@
                     allstr += s;
                 }
             }
-            parent.window.document.getElementById("txtName13").innerHTML = allstr;
+            var lastValue = allstr.replace(/\r\n/g,',');
+            //console.log(lastValue);
+            parent.window.document.getElementById("txtName4").value = lastValue;
         }
     </script>
 </head>
