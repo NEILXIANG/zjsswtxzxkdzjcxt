@@ -59,7 +59,7 @@ var open_box = function (url, name, width, height, title) {
             dialog.close();
         }},
         { text:'取消', onclick:function (item, dialog) {
-            dialog.hidden();
+            dialog.close();
         }}
     ], isResize:true
     });
